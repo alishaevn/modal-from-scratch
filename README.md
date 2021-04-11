@@ -1,1 +1,2 @@
-# modal-from-scratch
+# Build a modal from scratch
+## With HTML, CSS and JavaScript

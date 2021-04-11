@@ -1,0 +1,37 @@
+@font-face {
+	font-family: Hello;
+	src: local('Hello.otf');
+}
+
+@font-face {
+	font-family: Provicali;
+	src: local('Provicali.otf');
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+}
+
+:root {
+	--Hello: 'Hello';
+	--Provicali: 'Provicali';
+	--Raleway: 'Raleway';
+
+	--black-leather-jacket: #203323;
+	--harvest-gold: #D8AD00;
+	--ivory: #FFFEF4;
+	--moisheBlue: #00BCFF;
+	--saferGreen: #7BC087;
+	--scimoSilver: #EFF2F7;
+	--scimoTeal: #43869A;
+	--spanish-grey: #97A19A;
+	--vizerCoral: #F5856F;
+	--vizerPink: #FFF1F1;
+	--wheat: #EAD39D;
+	--white: #FFFFFF;
+
+	--divider-width: 100;
+	--section-height: 400;
+	--section-width: 100;
+}

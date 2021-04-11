@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Build A Modal From Scratch</title>
+	<link href='css/index.css' rel='stylesheet' type='text/css'>
+	<link href='css/projects.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<h1>test</h1>
+	<main class='container'>
+		<section id='projects'>
+			<div class='blackout'></div>
+			<img class='project-button' src='./assets/projects/safer.png' alt='safeR web app'
+				data-project-button='safer'>
+			<aside class='popup-modal safer' data-project-modal='safer'>
+				<h1 id='hello'>hello</h1>
+				<div class='popup-modal__close'>
+					X
+				</div>
+				<div class='modal-mock-up safer'></div>
+				<div class='app-details'>
+					<h2 class='app-name safer'>safeR</h2>
+				</div>
+				<p class='app-blurb'>
+					safeR is a React app with a React Native
+					companion, complete with geolocation, that
+					allows users to anonymously report local
+					incidents.
+				</p>
+				<div class='proof-wrapper'>
+					<a href='https://safer.netlify.app/' rel='noopener noreferrer' target='_blank'>
+						<img class='proof' src='./assets/projects/desktop-monitor.svg' alt='safeR website'>
+					</a>
+				</div>
+			</aside>
+		</section>
+	</main>
+</body>
+<script src='js/index.js'></script>
+<script src='js/projects.js'></script>
+
+</html>
