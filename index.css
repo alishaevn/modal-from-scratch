@@ -1,5 +1,13 @@
 @import './variables.css';
 
+/********
+DEFAULT MOBILE STYLING
+********/
+* {
+	margin: 0;
+	padding: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -11,12 +19,7 @@ a {
 	color: inherit;
 }
 
-body.hidden {
-	overflow: hidden;
-}
-
 .app-blurb {
-	font-family: var(--Raleway);
 	font-size: 14px;
 	text-align: center;
 	margin: 20px auto;
@@ -32,7 +35,6 @@ body.hidden {
 
 .app-name {
 	font-size: 30px;
-	font-family: var(--Provicali);
 	font-weight: 100;
 	letter-spacing: 1px;
 	margin-left: 10px;
@@ -48,16 +50,24 @@ body.hidden {
 	display: none;
 }
 
-.modal-logo {
-	height: 50px;
-	width: 50px;
+body.hidden {
+	overflow: hidden;
+}
+
+.container {
+	width: 350px;
+	padding: 20px;
+}
+
+html {
+	box-sizing: border-box;
 }
 
 .modal-mock-up {
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: var(--section-width);
-	height: calc(var(--section-height) * 0.45px);
+	width: 100px;
+	height: 225px;
 	margin-top: 25px;
 }
 
@@ -81,14 +91,17 @@ body.hidden {
 
 .popup-modal__close {
 	float: right;
-	font-family: var(--Provicali);
 	font-size: 20px;
 }
 
 .project-button {
 	display: inline-block;
-	width: calc((var(--section-width) - 40) * 1px);
+	width: 300px;
 	margin: 20px auto;
+}
+
+#projects {
+	/* background-color: var(--ivory); */
 }
 
 .proof {
@@ -106,12 +119,4 @@ body.hidden {
 	margin-right: auto;
 	left: 0;
 	right: 0;
-}
-
-.svg-white {
-	filter: invert(100%) sepia(0%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
-}
-
-.white {
-	color: var(--white);
 }

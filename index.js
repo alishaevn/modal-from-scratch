@@ -1,5 +1,19 @@
 'use strict'
 
+const height = window.innerHeight
+const width = window.innerWidth
+
+const dividers = document.querySelectorAll('.divider')
+const sections = document.querySelectorAll('section')
+
+dividers.forEach(divider => divider.style.setProperty('--divider-width', width))
+sections.forEach(section => {
+	section.style.setProperty('--section-height', height)
+	section.style.setProperty('--section-width', width)
+})
+
+
+// projects
 const blackout = document.querySelector('.blackout')
 const body = document.querySelector('body')
 const modalOpenTriggers = document.querySelectorAll('.project-button')
@@ -33,9 +47,9 @@ const setModalStyle = project => {
 
 	switch(project) {
 		case 'safer':
-			image = 'url(assets/projects/safer-modal.png)'
+			image = 'url(assets/safer-modal.png)'
 			// name = 'var(--scimoTeal)'
-			color = 'var(--saferGreen)'
+			color = '#7BC087'
 	}
 
 	modalBgImage.style['background-image'] = image
