@@ -25,9 +25,9 @@ modalOpenTriggers.forEach(trigger => {
 
 		setModalStyle(projectButton)
 		addClasses(popupModal)
-		
+
 		popupModal.scrollIntoView()
-    
+
 		popupModal.querySelector('.popup-modal__close').addEventListener('click', () => removeClasses(popupModal))
 		blackout.addEventListener('click', () => removeClasses(popupModal))
 	})
@@ -48,7 +48,6 @@ const setModalStyle = project => {
 	switch(project) {
 		case 'safer':
 			image = 'url(assets/safer-modal.png)'
-			// name = 'var(--scimoTeal)'
 			color = '#7BC087'
 	}
 
